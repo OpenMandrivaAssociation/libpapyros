@@ -25,9 +25,9 @@ A collection of classes used throughout Papyros
 
 %build
 %cmake_qt5
-%ninja
+%make
 
 %install
-%ninja_install -C build
+%makeinstall_std -C build
 
 %files
