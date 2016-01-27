@@ -24,6 +24,7 @@ A collection of classes used throughout Papyros
 %setup -q
 
 %build
+sed -i 's!-Werror!!g' CMakeLists.txt
 %cmake_qt5
 %make
 
