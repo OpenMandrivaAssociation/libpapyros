@@ -22,10 +22,10 @@ A collection of classes used throughout Papyros
 
 %prep
 %setup -q
-%cmake_qt5
 
 %build
-%ninja -C build
+%cmake_qt5
+%ninja
 
 %install
 %ninja_install -C build
