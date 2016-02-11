@@ -17,6 +17,7 @@ URL:		https://github.com/papyros/libpapyros
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5Wallet)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
