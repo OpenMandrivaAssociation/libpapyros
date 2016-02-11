@@ -53,6 +53,8 @@ sed -i 's!-Werror!!g' CMakeLists.txt
 
 %files -n %{libname}
 %{_libdir}/lib*Papyros.so.%{major}*
+%{_libdir}/qml/Papyros/Core/libpapyroscore.so
+%{_libdir}/qml/Papyros/Core/qmldir
 
 %files -n %{devname}
 %dir %{_includedir}/Papyros
@@ -60,6 +62,7 @@ sed -i 's!-Werror!!g' CMakeLists.txt
 %dir %{_includedir}/Papyros/papyros
 %dir %{_libdir}/cmake/Papyros
 %{_includedir}/Papyros/Papyros/KQuickConfig
+%{_includedir}/Papyros/Papyros/KQuickWallet
 %{_includedir}/Papyros/Papyros/QQuickList
 %{_includedir}/Papyros/Papyros/QObjectListModel
 %{_includedir}/Papyros/papyros/*.h
